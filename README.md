@@ -48,4 +48,4 @@ See [all my contributions](CONTRIBUTIONS.md).
 
 ## Contact
 
-- Website: [heraklet.com](https://heraklet.com)
+- Email: [musa.toktas@heraklet.com](mailto:musa.toktas@heraklet.com)
