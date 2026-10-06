@@ -1,22 +1,44 @@
-# Musa Toktas
+# Hi, I'm Musa
 
-I am an engineer and the founder of [Heraklet](https://heraklet.com). Heraklet does certification engineering for critical systems.
+I build developer tools and the software that runs my companies.
 
-I am an ISO/IEC 27001 Lead Auditor and an ISMS Lead Implementer.
+I founded [Heraklet](https://heraklet.com). We do certification engineering for critical systems. I am an ISO/IEC 27001 Lead Auditor and an ISMS Lead Implementer, so security is part of how I ship.
 
-I write TypeScript. I make web products for travel and business. I also contribute to open source tools for TypeScript.
+My focus now is TypeScript performance.
 
-## Things I built
+## whyts: why is my TypeScript project slow?
 
-- **[whyts](https://github.com/musatoktas/whyts)**: A CLI that finds why a TypeScript project is slow. It uses compiler traces and the import graph. It shows measured evidence, not guesses. Run `npx whyts --project .` to try it.
-- **[PayPartner](https://paypartner.ae)**: An e-invoicing and business management application for companies in the UAE.
-- **[MBD Travel](https://mbdtravel.com)**: A travel commerce platform for tours, hotels and experiences.
+[![npm version](https://img.shields.io/npm/v/whyts)](https://www.npmjs.com/package/whyts)
 
-## Open source contributions
+Large TypeScript projects become slow. `tsc` takes 30 seconds, then 60. The editor starts to lag. Most teams guess the cause. [whyts](https://github.com/musatoktas/whyts) measures it.
 
-- **TypeScript**: [#64643](https://github.com/microsoft/TypeScript/pull/64643) fixes linked editing for incomplete JSX property tags with attributes.
-- **typescript-eslint**: [#12971](https://github.com/typescript-eslint/typescript-eslint/pull/12971) adds tests that check the source order of visitor keys.
-- **TypeScript**: [#62230](https://github.com/microsoft/TypeScript/issues/62230#issuecomment-6017645478) gives measurements for slow auto-imports with large package exports.
+```sh
+npx whyts --project .
+```
+
+whyts runs your own TypeScript compiler with `--generateTrace` and `--extendedDiagnostics`. Then it reads the trace. It finds the source expressions and the type comparisons that use the most check time.
+
+What you get:
+
+- **Measured hot spots**: the `file:line`, the check time, and the type comparison inside that check.
+- **Project structure findings**: broad `include` patterns, barrel files with a large reach, and duplicate `@types` versions.
+- **`whyts explain <file>`**: the import chain that puts a file in your program.
+- **JSON output** for CI and scripts.
+
+whyts does not guess. Each finding has a label: measured, observed, or review. It does not change your code. It makes no network calls. You do not need an account, an API key, or an LLM.
+
+On a private codebase with 900,000 lines of TypeScript, whyts found the same type hot spot that engineers found by hand.
+
+## Open source
+
+I contribute to TypeScript and to the tools around it. I measure before I change code.
+
+See [all my contributions](CONTRIBUTIONS.md).
+
+## Things I run
+
+- **[PayPartner](https://paypartner.ae)**: E-invoicing and business management software for companies in the UAE.
+- **[MBD Travel](https://mbdtravel.com)**: A travel commerce platform for tours, hotels, and experiences.
 
 ## Ask me about
 
