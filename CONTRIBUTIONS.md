@@ -4,6 +4,7 @@ This page lists my open source contributions. The newest item is at the top. Eac
 
 | Date | Project | Contribution | Link |
 | --- | --- | --- | --- |
+| 2026-10-07 | TypeORM | A fix for TS2589 in `QueryDeepPartialEntity` with self-containing JSON types (issue #8559). whyts found the cause | [PR #12943](https://github.com/typeorm/typeorm/pull/12943) |
 | 2026-10-07 | AWS Durable Execution SDK for JavaScript | A fix for two serialization round-trip inconsistencies in `waitForCondition` (issue #877) | [PR #974](https://github.com/aws/aws-durable-execution-sdk-js/pull/974) |
 | 2026-10-07 | TanStack Form | A fix for TS2589 in `DeepKeys` and `DeepValue` with self-referencing types (issues #1474 and #1484). Measured with whyts: 7.4 s to 0.06 s of Check time | [PR #2422](https://github.com/TanStack/form/pull/2422) |
 | 2026-10-07 | Lighthouse | Root cause and a fix proposal for a null SEO score when `/robots.txt` returns 304 or 300 (issue #17268) | [Comment](https://github.com/GoogleChrome/lighthouse/issues/17268#issuecomment-6032216277) |
