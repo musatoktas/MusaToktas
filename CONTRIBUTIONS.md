@@ -4,6 +4,7 @@ This page lists my open source contributions. The newest item is at the top. Eac
 
 | Date | Project | Contribution | Link |
 | --- | --- | --- | --- |
+| 2026-10-09 | Hono | A fix for TS2589 in `JSONParsed` with recursive JSON types (issue #2399). whyts found the cause. The fix keeps the `.d.ts` output at 762 bytes, where a depth limit gives 313,638 bytes | [Issue #5543](https://github.com/honojs/hono/issues/5543) |
 | 2026-10-08 | Qwik | Fix the default excluded `/manifest.json` path of the Netlify Edge adapter (issue #8113) | [PR #9187](https://github.com/QwikDev/qwik/pull/9187) |
 | 2026-10-07 | Rush (microsoft/rushstack) | Rush alerts no longer break `--json` and `--quiet` output (issue #5228) | [PR #6118](https://github.com/microsoft/rushstack/pull/6118) |
 | 2026-10-07 | TypeORM | A fix for TS2589 in `QueryDeepPartialEntity` with self-containing JSON types (issue #8559). whyts found the cause | [PR #12943](https://github.com/typeorm/typeorm/pull/12943) |
