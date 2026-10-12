@@ -16,6 +16,9 @@ Large TypeScript projects become slow. `tsc` takes 30 seconds, then 60. The edit
 npx whyts --project .
 ```
 
+<details>
+<summary><b>What whyts does and what you get</b></summary>
+
 whyts runs your own TypeScript compiler with `--generateTrace` and `--extendedDiagnostics`. Then it reads the trace. It finds the source expressions and the type comparisons that use the most check time.
 
 What you get:
@@ -28,6 +31,8 @@ What you get:
 whyts does not guess. Each finding has a label: measured, observed, or review. It does not change your code. It makes no network calls. You do not need an account, an API key, or an LLM.
 
 On a private codebase with 900,000 lines of TypeScript, whyts found the same type hot spot that engineers found by hand.
+
+</details>
 
 ## Open source
 
