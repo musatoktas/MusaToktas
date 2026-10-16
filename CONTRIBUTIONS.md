@@ -6,6 +6,8 @@ This page lists my open source contributions. The newest item is at the top. Eac
 
 | Date merged | Project | Contribution | Link |
 | --- | --- | --- | --- |
+| 2026-10-16 | Chrome DevTools MCP | `lighthouse_audit` now fails with the Lighthouse error code when the page could not be audited, and still writes the reports (issue #2967) | [PR #3188](https://github.com/ChromeDevTools/chrome-devtools-mcp/pull/3188) |
+| 2026-10-16 | Chrome DevTools MCP | `lighthouse_audit` keeps the emulated viewport after a navigation audit (issue #2968) | [PR #3189](https://github.com/ChromeDevTools/chrome-devtools-mcp/pull/3189) |
 | 2026-10-13 | AWS CDK CLI | Nested evaluators now share one `ListStackResources` list per stack (issue #2039) | [PR #2040](https://github.com/aws/aws-cdk-cli/pull/2040) |
 | 2026-10-11 | AWS Durable Execution SDK for JavaScript | A fix for two serialization round-trip inconsistencies in `waitForCondition` (issue #877) | [PR #974](https://github.com/aws/aws-durable-execution-sdk-js/pull/974) |
 | 2026-10-10 | Qwik | Fix the default excluded `/manifest.json` path of the Netlify Edge adapter (issue #8113) | [PR #9187](https://github.com/QwikDev/qwik/pull/9187) |
@@ -14,6 +16,8 @@ This page lists my open source contributions. The newest item is at the top. Eac
 
 | Date | Project | Contribution | Link |
 | --- | --- | --- | --- |
+| 2026-10-16 | Chrome DevTools MCP | `lighthouse_audit` now fails with the Lighthouse error code when the page could not be audited, and still writes the reports (issue #2967). Merged | [PR #3188](https://github.com/ChromeDevTools/chrome-devtools-mcp/pull/3188) |
+| 2026-10-16 | Chrome DevTools MCP | `lighthouse_audit` keeps the emulated viewport after a navigation audit (issue #2968). Merged | [PR #3189](https://github.com/ChromeDevTools/chrome-devtools-mcp/pull/3189) |
 | 2026-10-14 | AWS CDK CLI | Template parsing accepts duplicate keys in JSON templates, as CloudFormation does (issue #1911) | [PR #2043](https://github.com/aws/aws-cdk-cli/pull/2043) |
 | 2026-10-14 | cognito-at-edge | With `csrfProtection` enabled, the post-login redirect now uses the requested path instead of a doubled host (issues #120 and #108) | [PR #154](https://github.com/awslabs/cognito-at-edge/pull/154) |
 | 2026-10-13 | Renovate | A fix for issues not found when Renovate runs as a GitHub App bot: issues are now filtered by author in code (issue #44730) | [PR #47013](https://github.com/renovatebot/renovate/pull/47013) |
