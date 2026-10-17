@@ -6,6 +6,7 @@ This page lists my open source contributions. The newest item is at the top. Eac
 
 | Date merged | Project | Contribution | Link |
 | --- | --- | --- | --- |
+| 2026-10-17 | OpenClaw | `createTypingKeepaliveLoop` no longer lets a rejecting keepalive callback crash the process; the failure is logged as a warning (issue #175303) | [PR #175381](https://github.com/openclaw/openclaw/pull/175381) |
 | 2026-10-16 | Chrome DevTools MCP | `lighthouse_audit` now fails with the Lighthouse error code when the page could not be audited, and still writes the reports (issue #2967) | [PR #3188](https://github.com/ChromeDevTools/chrome-devtools-mcp/pull/3188) |
 | 2026-10-16 | Chrome DevTools MCP | `lighthouse_audit` keeps the emulated viewport after a navigation audit (issue #2968) | [PR #3189](https://github.com/ChromeDevTools/chrome-devtools-mcp/pull/3189) |
 | 2026-10-13 | AWS CDK CLI | Nested evaluators now share one `ListStackResources` list per stack (issue #2039) | [PR #2040](https://github.com/aws/aws-cdk-cli/pull/2040) |
@@ -16,6 +17,12 @@ This page lists my open source contributions. The newest item is at the top. Eac
 
 | Date | Project | Contribution | Link |
 | --- | --- | --- | --- |
+| 2026-10-17 | OpenClaw | `createTypingKeepaliveLoop` no longer lets a rejecting keepalive callback crash the process; the failure is logged as a warning (issue #175303). Merged | [PR #175381](https://github.com/openclaw/openclaw/pull/175381) |
+| 2026-10-17 | ts-rust | `tsc -b` now counts the wait for the started check in Check time (issue #88) | [PR #91](https://github.com/pingdotgg/ts-rust/pull/91) |
+| 2026-10-17 | ts-rust | `--extendedDiagnostics` now reports Memory used on macOS (issue #87) | [PR #92](https://github.com/pingdotgg/ts-rust/pull/92) |
+| 2026-10-15 | AWS Encryption SDK for JavaScript | The raw AES keyring copies `unencryptedMasterKey` instead of consuming it (issue #970) | [PR #1718](https://github.com/aws/aws-encryption-sdk-javascript/pull/1718) |
+| 2026-10-15 | Deep Agents JS | `@langchain/anthropic` added as a dependency of the ACP package (issue #915) | [PR #962](https://github.com/langchain-ai/deepagentsjs/pull/962) |
+| 2026-10-14 | AWS SDK JavaScript codemod | The v2 to v3 transform removes `.promise()` on a stored request without chained calls (issue #882) | [PR #1046](https://github.com/aws/aws-sdk-js-codemod/pull/1046) |
 | 2026-10-16 | Chrome DevTools MCP | `lighthouse_audit` now fails with the Lighthouse error code when the page could not be audited, and still writes the reports (issue #2967). Merged | [PR #3188](https://github.com/ChromeDevTools/chrome-devtools-mcp/pull/3188) |
 | 2026-10-16 | Chrome DevTools MCP | `lighthouse_audit` keeps the emulated viewport after a navigation audit (issue #2968). Merged | [PR #3189](https://github.com/ChromeDevTools/chrome-devtools-mcp/pull/3189) |
 | 2026-10-14 | AWS CDK CLI | Template parsing accepts duplicate keys in JSON templates, as CloudFormation does (issue #1911) | [PR #2043](https://github.com/aws/aws-cdk-cli/pull/2043) |
