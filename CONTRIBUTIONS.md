@@ -6,6 +6,7 @@ This page lists my open source contributions. The newest item is at the top. Eac
 
 | Date merged | Project | Contribution | Link |
 | --- | --- | --- | --- |
+| 2026-10-19 | tRPC | A fix for TS2589 in `Serialize` with recursive JSON types such as `Prisma.JsonValue` (issue #6997). whyts found the cause | [PR #7660](https://github.com/trpc/trpc/pull/7660) |
 | 2026-10-17 | OpenClaw | `createTypingKeepaliveLoop` no longer lets a rejecting keepalive callback crash the process; the failure is logged as a warning (issue #175303) | [PR #175381](https://github.com/openclaw/openclaw/pull/175381) |
 | 2026-10-16 | Chrome DevTools MCP | `lighthouse_audit` now fails with the Lighthouse error code when the page could not be audited, and still writes the reports (issue #2967) | [PR #3188](https://github.com/ChromeDevTools/chrome-devtools-mcp/pull/3188) |
 | 2026-10-16 | Chrome DevTools MCP | `lighthouse_audit` keeps the emulated viewport after a navigation audit (issue #2968) | [PR #3189](https://github.com/ChromeDevTools/chrome-devtools-mcp/pull/3189) |
@@ -17,6 +18,7 @@ This page lists my open source contributions. The newest item is at the top. Eac
 
 | Date | Project | Contribution | Link |
 | --- | --- | --- | --- |
+| 2026-10-19 | Eden (Elysia) | `Treaty.Create` and the other clients constrain `App` to `AnyElysia`; the 7-argument constraint hit TS2589 on apps with many plugins (issue #274). whyts found the cause | [PR #275](https://github.com/elysiajs/eden/pull/275) |
 | 2026-10-17 | OpenClaw | `createTypingKeepaliveLoop` no longer lets a rejecting keepalive callback crash the process; the failure is logged as a warning (issue #175303). Merged | [PR #175381](https://github.com/openclaw/openclaw/pull/175381) |
 | 2026-10-17 | ts-rust | `tsc -b` now counts the wait for the started check in Check time (issue #88) | [PR #91](https://github.com/pingdotgg/ts-rust/pull/91) |
 | 2026-10-17 | ts-rust | `--extendedDiagnostics` now reports Memory used on macOS (issue #87) | [PR #92](https://github.com/pingdotgg/ts-rust/pull/92) |
@@ -31,7 +33,7 @@ This page lists my open source contributions. The newest item is at the top. Eac
 | 2026-10-12 | Vue | A fix for the slow type check with `defineModel` and a `void` `defineEmits` signature (issue #14323). whyts found the cause. vue-tsc: 80 s to 0.56 s | [PR #15851](https://github.com/vuejs/core/pull/15851) |
 | 2026-10-12 | AWS CDK CLI | Nested evaluators now share one `ListStackResources` list per stack (issue #2039). Merged | [PR #2040](https://github.com/aws/aws-cdk-cli/pull/2040) |
 | 2026-10-11 | ZenStack | Measurements of the type cost of `update()` from 3.6.4 to 3.9.7: two regressions, in 3.7.0 and 3.9.0 (issue #2854) | [Comment](https://github.com/zenstackhq/zenstack/issues/2854#issuecomment-6106510035) |
-| 2026-10-11 | tRPC | A fix for TS2589 in `Serialize` with recursive JSON types such as `Prisma.JsonValue` (issue #6997). whyts found the cause | [PR #7660](https://github.com/trpc/trpc/pull/7660) |
+| 2026-10-11 | tRPC | A fix for TS2589 in `Serialize` with recursive JSON types such as `Prisma.JsonValue` (issue #6997). whyts found the cause. Merged | [PR #7660](https://github.com/trpc/trpc/pull/7660) |
 | 2026-10-09 | node-redis | Measurements of type-check memory for cluster and client unions from 4.7.0 to 6.3.0, and a test of variance annotations (issue #2975) | [Comment](https://github.com/redis/node-redis/issues/2975#issuecomment-6081025083) |
 | 2026-10-09 | Hono | A fix for TS2589 in `JSONParsed` with recursive JSON types (issue #2399). whyts found the cause. The fix keeps the `.d.ts` output at 762 bytes, where a depth limit gives 313,638 bytes | [Issue #5543](https://github.com/honojs/hono/issues/5543) |
 | 2026-10-08 | Qwik | Fix the default excluded `/manifest.json` path of the Netlify Edge adapter (issue #8113). Merged | [PR #9187](https://github.com/QwikDev/qwik/pull/9187) |
