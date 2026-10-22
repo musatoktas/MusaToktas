@@ -6,6 +6,8 @@ This page lists my open source contributions. The newest item is at the top. Eac
 
 | Date merged | Project | Contribution | Link |
 | --- | --- | --- | --- |
+| 2026-10-22 | ts-rust | `tsc -b` now counts the wait for the started check in Check time (issue #88) | [PR #91](https://github.com/pingdotgg/ts-rust/pull/91) |
+| 2026-10-22 | ts-rust | `--extendedDiagnostics` now reports Memory used on macOS (issue #87) | [PR #92](https://github.com/pingdotgg/ts-rust/pull/92) |
 | 2026-10-19 | tRPC | A fix for TS2589 in `Serialize` with recursive JSON types such as `Prisma.JsonValue` (issue #6997). whyts found the cause | [PR #7660](https://github.com/trpc/trpc/pull/7660) |
 | 2026-10-17 | OpenClaw | `createTypingKeepaliveLoop` no longer lets a rejecting keepalive callback crash the process; the failure is logged as a warning (issue #175303) | [PR #175381](https://github.com/openclaw/openclaw/pull/175381) |
 | 2026-10-16 | Chrome DevTools MCP | `lighthouse_audit` now fails with the Lighthouse error code when the page could not be audited, and still writes the reports (issue #2967) | [PR #3188](https://github.com/ChromeDevTools/chrome-devtools-mcp/pull/3188) |
@@ -20,8 +22,8 @@ This page lists my open source contributions. The newest item is at the top. Eac
 | --- | --- | --- | --- |
 | 2026-10-19 | Eden (Elysia) | `Treaty.Create` and the other clients constrain `App` to `AnyElysia`; the 7-argument constraint hit TS2589 on apps with many plugins (issue #274). whyts found the cause | [PR #275](https://github.com/elysiajs/eden/pull/275) |
 | 2026-10-17 | OpenClaw | `createTypingKeepaliveLoop` no longer lets a rejecting keepalive callback crash the process; the failure is logged as a warning (issue #175303). Merged | [PR #175381](https://github.com/openclaw/openclaw/pull/175381) |
-| 2026-10-17 | ts-rust | `tsc -b` now counts the wait for the started check in Check time (issue #88) | [PR #91](https://github.com/pingdotgg/ts-rust/pull/91) |
-| 2026-10-17 | ts-rust | `--extendedDiagnostics` now reports Memory used on macOS (issue #87) | [PR #92](https://github.com/pingdotgg/ts-rust/pull/92) |
+| 2026-10-17 | ts-rust | `tsc -b` now counts the wait for the started check in Check time (issue #88). Merged | [PR #91](https://github.com/pingdotgg/ts-rust/pull/91) |
+| 2026-10-17 | ts-rust | `--extendedDiagnostics` now reports Memory used on macOS (issue #87). Merged | [PR #92](https://github.com/pingdotgg/ts-rust/pull/92) |
 | 2026-10-16 | Chrome DevTools MCP | `lighthouse_audit` now fails with the Lighthouse error code when the page could not be audited, and still writes the reports (issue #2967). Merged | [PR #3188](https://github.com/ChromeDevTools/chrome-devtools-mcp/pull/3188) |
 | 2026-10-16 | Chrome DevTools MCP | `lighthouse_audit` keeps the emulated viewport after a navigation audit (issue #2968). Merged | [PR #3189](https://github.com/ChromeDevTools/chrome-devtools-mcp/pull/3189) |
 | 2026-10-15 | AWS Encryption SDK for JavaScript | The raw AES keyring copies `unencryptedMasterKey` instead of consuming it (issue #970) | [PR #1718](https://github.com/aws/aws-encryption-sdk-javascript/pull/1718) |
