@@ -21,7 +21,9 @@ This page lists my open source contributions. The newest item is at the top. Eac
 | Date | Project | Contribution | Link |
 | --- | --- | --- | --- |
 | 2026-10-23 | Superforms | `FormPath`, `FormPathLeaves` and `FormPathArrays` no longer fail with TS2589 on a recursive type; they stop at a type that repeats a parent (issue #269) | [PR #703](https://github.com/ciscoheat/sveltekit-superforms/pull/703) |
-| 2026-10-23 | MP4Box.js | QuickTime user data boxes such as `©TIM` and `©nam` are parsed again instead of being rejected as invalid box types (issue #510) | [PR #573](https://github.com/gpac/mp4box.js/pull/573) |
+| 2026-10-23 | Telegraf | `on()` with a typed middleware and a custom context type-checks in 0.5 s instead of 7.6 s; the filter type is inferred from the filters only (issue #2016) | [PR #2100](https://github.com/telegraf/telegraf/pull/2100) |
+| 2026-10-23 | Lion | `lion-textarea` uses its own textarea when a browser extension adds another element to the input slot (issue #2616) | [PR #2942](https://github.com/ing-bank/lion/pull/2942) |
+| 2026-10-23 | MP4Box.js | Any box type is accepted in QuickTime files, and QuickTime user data types such as `©TIM` in other files, instead of stopping the parse (issue #510) | [PR #573](https://github.com/gpac/mp4box.js/pull/573) |
 | 2026-10-22 | Pretty TypeScript Errors | The 13 error message regexes from issue #187 no longer retry every position on hostile input (recheck: vulnerable to safe), with the same output on 8,506 messages | [PR #241](https://github.com/yoavbls/pretty-ts-errors/pull/241) |
 | 2026-10-19 | Eden (Elysia) | `Treaty.Create` and the other clients constrain `App` to `AnyElysia`; the 7-argument constraint hit TS2589 on apps with many plugins (issue #274). whyts found the cause | [PR #275](https://github.com/elysiajs/eden/pull/275) |
 | 2026-10-17 | OpenClaw | `createTypingKeepaliveLoop` no longer lets a rejecting keepalive callback crash the process; the failure is logged as a warning (issue #175303). Merged | [PR #175381](https://github.com/openclaw/openclaw/pull/175381) |
