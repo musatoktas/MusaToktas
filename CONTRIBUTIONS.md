@@ -21,6 +21,7 @@ This page lists my open source contributions. The newest item is at the top. Eac
 | Date | Project | Contribution | Link |
 | --- | --- | --- | --- |
 | 2026-10-23 | Superforms | `FormPath`, `FormPathLeaves` and `FormPathArrays` no longer fail with TS2589 on a recursive type; they stop at a type that repeats a parent (issue #269) | [PR #703](https://github.com/ciscoheat/sveltekit-superforms/pull/703) |
+| 2026-10-23 | HonKit | Clicking a search result that links to the current page now closes the search results (issue #488) | [PR #538](https://github.com/honkit/honkit/pull/538) |
 | 2026-10-23 | Telegraf | `on()` with a typed middleware and a custom context type-checks in 0.5 s instead of 7.6 s; the filter type is inferred from the filters only (issue #2016) | [PR #2100](https://github.com/telegraf/telegraf/pull/2100) |
 | 2026-10-23 | Lion | `lion-textarea` uses its own textarea when a browser extension adds another element to the input slot (issue #2616) | [PR #2942](https://github.com/ing-bank/lion/pull/2942) |
 | 2026-10-23 | MP4Box.js | Any box type is accepted in QuickTime files, and QuickTime user data types such as `©TIM` in other files, instead of stopping the parse (issue #510) | [PR #573](https://github.com/gpac/mp4box.js/pull/573) |
