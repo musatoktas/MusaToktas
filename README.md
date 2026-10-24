@@ -53,5 +53,5 @@ See [all my contributions](CONTRIBUTIONS.md).
 
 ## Contact
 
-- Website: [musatoktas.github.io](https://musatoktas.github.io)
+- Website: [musatoktas.com](https://musatoktas.com)
 - Email: [musa.toktas@heraklet.com](mailto:musa.toktas@heraklet.com)
