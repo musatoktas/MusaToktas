@@ -4,8 +4,6 @@ I build developer tools and the software that runs my companies.
 
 I founded [Heraklet](https://heraklet.com). We do certification engineering for critical systems. I am an ISO/IEC 27001 Lead Auditor and an ISMS Lead Implementer, so security is part of how I ship.
 
-My focus now is TypeScript performance.
-
 ## whyts: why is my TypeScript project slow?
 
 [![npm version](https://img.shields.io/npm/v/whyts)](https://www.npmjs.com/package/whyts)
